@@ -1,0 +1,88 @@
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+  border-radius: 10px;
+  background-color: #F5F5F5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 3rem;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  color: #0A2342;
+  margin-bottom: 1.5rem;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  background-color: #B88D63;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #A07A55;
+}
+
+.cta-link {
+  color: white;
+  text-decoration: none;
+}
+
+.services-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 3rem auto 0;
+  gap: 2rem;
+}
+
+.service-section {
+  flex: 1;
+  text-align: left;
+}
+
+.service-section h2 {
+  font-size: 1.8rem;
+  color: #0A2342;
+  margin-bottom: 1rem;
+}
+
+.service-section ul {
+  list-style: none;
+}
+
+.service-section li {
+  margin-bottom: 0.8rem;
+}
+
+.service-link {
+  font-size: 1rem;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.service-link:hover {
+  color: #B88D63;
+}
+
+@media (max-width: 768px) {
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .service-section {
+    text-align: center;
+  }
+}

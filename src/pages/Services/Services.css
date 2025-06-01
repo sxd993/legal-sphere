@@ -1,0 +1,71 @@
+.services {
+  padding: 2rem;
+  background-color: #F8F1E9; /* Новый тёплый фон */
+  text-align: center;
+}
+
+.services h1 {
+  font-size: 2.8rem;
+  color: #0A2342;
+  margin-bottom: 2rem;
+}
+
+.services-intro {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.services-intro p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-card {
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: linear-gradient(145deg, #ffffff 70%, #F8F1E9 100%); /* Лёгкий градиент */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  color: #0A2342;
+  margin-bottom: 1rem;
+}
+
+.service-card p {
+  font-size: 1rem; /* Увеличен для лучшей читаемости */
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.service-button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  background-color: #43160f;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.service-button:hover {
+  background-color: #5a1f14;
+}
