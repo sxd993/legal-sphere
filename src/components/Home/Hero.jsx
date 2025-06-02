@@ -12,12 +12,15 @@ const Hero = () => {
           <ul>
             {legalServices.map((service) => (
               <li key={service.id}>
-                <Link to={`/services/legal/${service.id}`} className="service-link">
+                <Link to={`/services/legal/${service.id}`} className="service-item">
                   {service.name}
                 </Link>
               </li>
             ))}
           </ul>
+          <Link to="/services/legal" className="view-all-button">
+            Перейти ко всем услугам
+          </Link>
         </div>
 
         <div className="service-section">
@@ -25,12 +28,15 @@ const Hero = () => {
           <ul>
             {physicalServices.map((service) => (
               <li key={service.id}>
-                <Link to={`/services/physical/${service.id}`} className="service-link">
+                <Link to={`/services/physical/${service.id}`} className="service-item">
                   {service.name}
                 </Link>
               </li>
             ))}
           </ul>
+          <Link to="/services/physical" className="view-all-button">
+            Перейти ко всем услугам
+          </Link>
         </div>
       </div>
     </div>
@@ -38,4 +44,3 @@ const Hero = () => {
 };
 
 export default Hero;
-

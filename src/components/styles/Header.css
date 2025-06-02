@@ -9,7 +9,6 @@
   align-items: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   font-family: 'Poppins', sans-serif;
-  position: sticky;
   top: 0;
   z-index: 20;
 }
@@ -53,7 +52,7 @@
 
 .nav a:hover,
 .nav a.active {
-  color: #D32F2F;
+  color: #f73e3e;
 }
 
 .logo img {

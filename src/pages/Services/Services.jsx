@@ -55,15 +55,16 @@ const Services = () => {
         <h1>{data.title}</h1>
         <div className="services-list">
           {data.services.map((service) => (
-            <div key={service.id} className="service-item">
-              <Link to={`/services/${id}/${service.id}`} className="service-link">
-                <span className="service-dot">•</span> {service.name}
-              </Link>
-            </div>
+            <Link to={`/services/${id}/${service.id}`} className="service-link">
+              {service.name}
+            </Link>
           ))}
-          <Link to={`/services/`} className="service-button">Назад к списку услуг</Link>
+          <Link to="/services/" className="service-button">
+            Назад к списку услуг
+          </Link>
         </div>
       </section>
+
     );
   }
 
