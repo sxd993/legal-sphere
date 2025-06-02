@@ -1,10 +1,11 @@
 .footer {
-  background-color: #43160f; /* красно-коричневый фон */
+  background-color: #3E2330;
   color: #fff;
   padding: 40px 20px;
   font-size: 16px;
   text-align: center;
   position: relative;
+  font-family: 'Poppins', sans-serif;
 }
 
 .footer::before {
@@ -12,7 +13,7 @@
   display: block;
   height: 1px;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.2); /* верхняя полоска */
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.1));
   position: absolute;
   top: 0;
   left: 0;
@@ -30,6 +31,7 @@
 .footer-column {
   flex: 1;
   min-width: 200px;
+  padding: 10px 0;
 }
 
 .footer-column strong {
@@ -38,10 +40,12 @@
   font-weight: 600;
   font-size: 17px;
   color: #ffffff;
+  letter-spacing: -0.01em;
 }
 
 .footer-column p {
   margin: 0;
   font-size: 15px;
   color: rgba(255, 255, 255, 0.85);
+  line-height: 1.6;
 }

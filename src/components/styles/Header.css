@@ -1,5 +1,5 @@
 .header {
-  background-color: #4b2e3b;
+  background-color: #3E2330;
   color: white;
   padding: 1.5rem 2rem;
   display: flex;
@@ -7,35 +7,63 @@
   gap: 2rem;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  font-family: 'Poppins', sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 20;
 }
 
 .logo {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
 .nav ul {
   list-style: none;
   display: flex;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 .nav a {
   color: white;
   text-decoration: none;
   font-size: 1.1rem;
+  font-weight: 500;
+  position: relative;
   transition: color 0.3s ease;
+}
+
+.nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #D32F2F;
+  transition: width 0.3s ease;
+}
+
+.nav a:hover::after,
+.nav a.active::after {
+  width: 100%;
 }
 
 .nav a:hover,
 .nav a.active {
-  color: #d4a373;
+  color: #D32F2F;
 }
 
 .logo img {
-  filter: brightness(0.8);
+  filter: brightness(0.9);
   max-height: 80px;
+  transition: filter 0.3s ease;
+}
+
+.logo img:hover {
+  filter: brightness(1);
 }
 
 .header-bottom {
@@ -43,27 +71,31 @@
   flex-direction: column;
   text-align: center;
   padding: 30px 20px;
+  background-color: #3E2330;
   color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .bottom-subtitle {
   font-size: 1rem;
   color: #b7998d;
   margin-bottom: 10px;
+  font-weight: 400;
+  opacity: 0.9;
 }
 
 .glow-line {
   height: 1px;
   width: 100%;
   max-width: 300px;
-  background: rgba(255, 255, 255, 0.2);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.1));
   margin: 0 auto 20px;
   position: relative;
 }
 
 .bottom-phone {
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 600;
   color: #fff;
   margin-bottom: 10px;
 }
@@ -71,5 +103,6 @@
 .bottom-address {
   margin-top: auto;
   font-size: 14px;
-  opacity: 0.6;
+  opacity: 0.7;
+  line-height: 1.5;
 }
